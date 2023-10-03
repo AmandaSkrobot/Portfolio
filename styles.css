@@ -1,0 +1,313 @@
+@import ('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap') ;
+
+* {    
+         margin:0px;
+        padding:0px; 
+        text-decoration: none;
+        list-style:none;
+        background-color:black;
+
+}
+
+header {
+
+    height:90px; 
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+
+
+}
+
+nav {
+
+    width:60%;
+
+
+}
+
+ul {
+
+    width:100%;
+    display:flex; 
+    justify-content:space-between;
+    
+}
+
+li {
+
+    color: white;
+    cursor: pointer;
+    list-style:none;
+    transition: .5s;
+    font-size:19px;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+}
+
+li:hover {
+
+    color:red;
+
+}
+
+#logo {
+
+    width:150px;    
+    height:auto;
+
+}
+
+
+
+#banner {
+
+    width:150px;    
+    height:auto;
+    background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO.jpg');
+    background-position:50% 50%;
+    background-size:cover;
+    width:100%;
+    height:600px;
+    display:flex;
+}   
+
+
+
+#video-container {
+
+    width:100%;
+    height:400px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.content {
+    width:60%;
+    display:flex;
+    justify-content: center;    
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.trailer {
+
+    width:50%;
+ 
+}
+
+
+
+
+#sinopse {
+
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+
+    flex-direction:column;
+    margin-left:30px;
+
+}
+
+
+.description{
+
+    color:aliceblue;
+    font-size: 14px;
+    font-family:'Oswald', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 70%;
+}
+
+.button {
+    width:200px ;
+    height:60px;
+    background-color:red;
+    color:white;
+    font-size:10px;
+    cursor:pointer;
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    text-transform: uppercase;
+    border-radius:5px;
+    font-size:15px;
+
+}
+.button:hover {
+
+    background-color: aliceblue;
+    color: black;
+
+    
+} 
+
+.actors-cards-container {
+    
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+  
+    width: 90%;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap:20px;
+    column-gap:40px;
+}
+
+.card {
+
+    width: 100%;
+    height: 600px;
+    background-color: blue;
+    border-radius:5px;
+    cursor:pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    padding: 0px 0px 20px 10px;
+    color:aliceblue;
+    font-size:17px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card:hover {
+  
+    transform:scale(1.02);
+
+}
+.banner1 {
+
+    background-image: url('https://noticiasdatv.uol.com.br/media/uploads/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg');
+    background-position:60% 50%;
+    background-size:cover;
+
+}
+.banner2 {
+   
+    background-image:url('https://cinepop.com.br/wp-content/uploads/2020/06/zoe-kravitz.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+}
+.banner3 {
+    
+    background-image:url('https://static.wikia.nocookie.net/batman/images/3/36/Jim_Gordon_Total_Film_still.webp/revision/latest?cb=20220220041206');
+    background-size:cover;
+    background-position:50% 50%;
+    }
+    
+
+
+footer{
+  
+    color:aliceblue;
+    height: 300px;
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around   ;
+ 
+}   
+
+footer img {
+    padding-top: 10%;
+
+}
+span {
+
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+} 
+
+.footer-navigation {
+  
+    display:none;
+}
+
+.footer-list {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#logo2 {
+   
+    height: auto;
+    width:150px;    
+  
+   
+}
+
+@media(max-width:768px) {
+
+    .footer-navigation{
+        display: block;
+    }
+    nav {
+        display:none;
+    }
+#banner {
+
+    background-position:35% 20%;
+}
+
+#video-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+.content {
+width: 95%;
+display: flex;
+flex-direction:column;
+justify-content: flex-start;
+
+
+}
+.trailer {
+width: 100%;
+
+}
+#sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.description {
+    width: 100%;
+}
+.button{ 
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+}
+
+
+}
