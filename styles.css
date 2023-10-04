@@ -63,7 +63,7 @@ li:hover {
 
 #banner {
 
-    width:150px;    
+   
     height:auto;
     background-image: url('https://pbs.twimg.com/media/FBwMEAMWQAA6BOO.jpg');
     background-position:50% 50%;
@@ -207,7 +207,7 @@ li:hover {
 }
 .banner3 {
     
-    background-image:url('https://www.looper.com/img/gallery/the-best-gordon-scene-in-the-batman-according-to-fans/intro-1646591550.jpg');
+    background-image:url('https://static.wikia.nocookie.net/batman/images/3/36/Jim_Gordon_Total_Film_still.webp/revision/latest?cb=20220220041206');
     background-size:cover;
     background-position:50% 50%;
     }
@@ -266,8 +266,11 @@ span {
         display:none;
     }
 #banner {
-
-    background-position:35% 20%;
+    height: 250px;
+    background-size:cover;
+    background-position:65% 75%;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 #video-container {
@@ -306,7 +309,7 @@ width: 100%;
 
 .cards-content {
     grid-template-columns: 1fr;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 
