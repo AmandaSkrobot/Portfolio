@@ -160,7 +160,11 @@ li:hover {
     justify-content: center;
     margin-top: 50px;
 }
+.banner3 {
+img:url('')
 
+         
+}
 .cards-content {
   
     width: 90%;
@@ -272,7 +276,11 @@ span {
     background-repeat: no-repeat;
     width: 100%;
 }
+.banner3{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyfvm_Sfbf51w9dJW9RebOlDgbjYJ691viKA&usqp=CAU');
 
+         
+}
 #video-container {
     width: 100%;
     height: 400px;
